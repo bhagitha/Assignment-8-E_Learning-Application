@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: rgb(233, 231, 231);
+        }
+        
+        .a {
+            font-family: 'Nunito', sans-serif;
+            font-size: x-large;
+        }
+        
+        .b {
+            font-size: 15px;
+        }
+        
+        .c:hover {
+            background-color: rgb(0, 0, 0);
+            box-shadow: 10px 20px 20px rgb(190, 194, 193);
+            color: thistle;
+        }
+        
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            background: rgb(0, 0, 0);
+            background: rgba(0, 0, 0, 0.5);
+            /* Black see-through */
+            color: #f1f1f1;
+            width: 100%;
+            transition: .5s ease;
+            opacity: 0;
+            color: white;
+            font-size: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+        /* When you mouse over the container, fade in the overlay title */
+        
+        .card:hover .overlay {
+            opacity: 1;
+            border: rgb(231, 231, 78);
+        }
+        
+        .shadow {
+            box-shadow: 10px 20px 20px rgb(190, 194, 193);
+        }
+        
+        .card {
+            box-shadow: 10px 18px 15px rgb(190, 194, 193);
+        }
+        
+        .v {
+            /* box-shadow: 0px 8px 5px rgb(13, 14, 13); */
+        }
+    </style>
+</head>
+
+
+<body>
+    <!-- Header starts-->
+    <!-- Navbar starts -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+        <a class="navbar-brand ml-5" href="#">
+            <span class="a">
+            <i class="fab fa-stumbleupon text-success font-weight-bolder h1"></i>
+            <strong style="line-height: 10px;"> Skill<span class="text-success">UP</span></strong>
+            </span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse b mt-2" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Courses
+              </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Full Stack Development -MERN
+
+                        </a>
+                        <a class="dropdown-item" href="#">Full Stack Development -MEAN</a>
+                        <a class="dropdown-item" href="#">Full Stack Development -Python-Django
+                        </a>
+                        <a class="dropdown-item" href="#">Full Stack Development -PHP</a>
+                        <a class="dropdown-item" href="#">Full Stack Development -Java-pringboot
+
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" tabindex="-1">Dashboard</a>
+                </li>
+            </ul>
+            <button type="button" class="btn btn-outline-success"> <i class="fas fa-sign-in-alt"></i> <a href="/register"> Sign in</a></button>
+            <button type="button" class="btn btn-success ml-3 mr-5"><a href="/login">Get Started</a></button>
+        </div>
+
+
+    </nav>
+    <!-- Navbar End -->
+    <div class="jumbotron shadow">
+        <div class="container p-5 text-center  ">
+            <h1 class="display-4">Upgrade Your Coding Skills With World's Largest Learning Platform</h1>
+            <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+            </p>
+
+            <form class="form-inline justify-content-center ">
+                <input class="form-control mr-sm-2 w-50 shadow " type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0 shadow" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+    <!-- Header end -->
+    <!-- Main starts -->
+    <div class="card-group p-2">
+        <div class="card mr-3 c h-75" style="width: 14rem; border-top-left-radius: 25%; border-bottom-right-radius: 25%;">
+            <img class="card-img-top h-100 v " style="border-top-left-radius: 25%;border-bottom-right-radius: 25%; opacity: .8 red" src="https://1.bp.blogspot.com/-h-v-t5_Zv0g/WnVjhpJtD2I/AAAAAAAAAck/OKXSrqa8obQouwSasszmVRN6sWZzW9F_ACLcBGAs/s1600/1_CDlclChuNeeM5Shfev2RTg.jpeg"
+                alt=" Card image cap ">
+            <h2 class="ml-3 text-secondary ">MEAN Stack</h2>
+            <div class="card-body h-100 overlay " 
+            style="border-top-left-radius: 25%;border-bottom-right-radius: 25%; ">
+                <h5 class="card-title ">MEAN Stack Development</h5>
+                <p class="card-text ">
+                    Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="# " class="btn btn-primary ">Register Now</a>
+            </div>
+        </div>
+        <div class="card mr-3 c h-75 " style="width: 14rem; border-top-left-radius: 25%;border-bottom-right-radius: 25%; ">
+            <img class="card-img-top h-100 v " style="border-top-left-radius: 25%;border-bottom-right-radius: 25%; opacity: .8 " src="https://1.bp.blogspot.com/-h-v-t5_Zv0g/WnVjhpJtD2I/AAAAAAAAAck/OKXSrqa8obQouwSasszmVRN6sWZzW9F_ACLcBGAs/s1600/1_CDlclChuNeeM5Shfev2RTg.jpeg"
+                alt=" Card image cap ">
+            <h2 class="ml-3 ">MERN Stack</h2>
+            <div class="card-body h-100 overlay " style="border-top-left-radius: 25%;border-bottom-right-radius: 25%; ">
+                <h5 class="card-title ">ReactJs Full Stack development</h5>
+                <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="# " class="btn btn-primary ">Register Now</a>
+            </div>
+        </div>
+        <div class="card mr-3 c h-75 " style="width: 14rem; border-top-left-radius: 25%;border-bottom-right-radius: 25%; ">
+            <img class="card-img-top h-100 v " style="border-top-left-radius: 25%;border-bottom-right-radius: 25%;opacity: .8 " src="https://1.bp.blogspot.com/-h-v-t5_Zv0g/WnVjhpJtD2I/AAAAAAAAAck/OKXSrqa8obQouwSasszmVRN6sWZzW9F_ACLcBGAs/s1600/1_CDlclChuNeeM5Shfev2RTg.jpeg "
+                alt="Card image cap ">
+            <h2 class="ml-3 ">DataScience</h2>
+            <div class="card-body h-100 overlay " style="border-top-left-radius: 25%;border-bottom-right-radius: 25%; ">
+                <h5 class="card-title ">Data Science</h5>
+                <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="# " class="btn btn-primary ">Register Now</a>
+            </div>
+        </div>
+        <div class="card mr-3 c h-75 " style="width: 14rem; border-top-left-radius: 25%;border-bottom-right-radius: 25%; ">
+            <img class="card-img-top h-100 v " style="border-top-left-radius: 25%;border-bottom-right-radius: 25%;opacity: .8 " src="https://1.bp.blogspot.com/-h-v-t5_Zv0g/WnVjhpJtD2I/AAAAAAAAAck/OKXSrqa8obQouwSasszmVRN6sWZzW9F_ACLcBGAs/s1600/1_CDlclChuNeeM5Shfev2RTg.jpeg"
+                alt="Card image cap ">
+            <h2 class="ml-3 ">Php full stack</h2>
+            <div class="card-body h-100 overlay " style="border-top-left-radius: 25%;border-bottom-right-radius: 25%; ">
+                <h5 class="card-title ">Php Full stack</h5>
+                <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="# " class="btn btn-primary ">Register Now</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Main End -->
+    <!-- Section one starts -->
+    <div class="jumbotron ">
+
+    </div>
+    <!-- section one end -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
+</body>
+
+</html>
